@@ -1,3 +1,4 @@
+
 Suppose, you want to clone or fork any repository. here are the following steps you should run the react app.
 (Disclaimer: I use React 18 as it is an old version so the command might be different, I will provide you the lts command that runs it on any version).
 Open up the terminal by simply dragging up from the bottom of the vs-code(make sure that you open git-bash).
