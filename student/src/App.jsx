@@ -1,8 +1,9 @@
-import Card from "./components/card";
+import Weather from "./components/Weather";
 function App() {
   return (
     <div>
-      <Card />
+      {/* <Card /> */}
+      <Weather/>
     </div>
   );
 }
