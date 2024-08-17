@@ -1,9 +1,12 @@
-import Weather from "./components/Weather";
+import TodoApp from "./components/TodoApp";
+import "./components/css/todo.css";
 function App() {
+  
   return (
-    <div>
+    <div className="main-container">
       {/* <Card /> */}
-      <Weather/>
+      {/* <Weather/> */}
+     <TodoApp/>
     </div>
   );
 }
