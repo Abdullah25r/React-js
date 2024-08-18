@@ -1,4 +1,4 @@
-
+import Markdown from "./components/Markdown App/markdown";
 function App() {
   
   return (
@@ -8,6 +8,7 @@ function App() {
      {/* <TodoApp/> */}
       {/* <Calculator/> */}
       {/* <Quiz/> */}
+      <Markdown/>
     </div>
   );
 }
