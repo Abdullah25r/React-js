@@ -16,6 +16,10 @@ const Quiz = () => {
     if (lock === false) {
       if (question.ans === ans) {
         e.target.classList.add("bg-success-subtle");
+
+
+
+        
         setLock(true);
         setScore((prevScore) => {
           return prevScore + 1;
@@ -123,7 +127,9 @@ const Quiz = () => {
           <h2>
             Your Scored {score} out of {data.length}
           </h2>
-          <button className="btn btn-dark m-2" onClick={reset}>Reset</button>
+          <button className="btn btn-dark m-2" onClick={reset}>
+            Reset
+          </button>
         </div>
       ) : (
         <></>
