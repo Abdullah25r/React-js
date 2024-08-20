@@ -1,27 +1,31 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Navbar from './components/Shopping cart/Navbar';
-import Products from './components/Shopping cart/pages/Products';
-import Footer from './components/Shopping cart/Footer';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+
+import Header from './components/Expense Tracker App/Header';
+import '../src/components/css/Expense.css'
+import Balance from './components/Expense Tracker App/Balance';
+import IncomeExpenses from './components/Expense Tracker App/IncomeExpenses';
+import TransactionList from './components/Expense Tracker App/TransactionLIst';
+import AddTransaction from './components/Expense Tracker App/AddTransaction';
+import { GlobalProvider } from './Context/GlobalState';
 function App() {
-  
+   
   return (
-    <BrowserRouter>
+      <GlobalProvider>
       {/* <Card /> */}
       {/* <Weather/> */}
      {/* <TodoApp/> */}
       {/* <Calculator/> */}
       {/* <Quiz/> */}
       {/* <Markdown/> */}
-     
-      <Navbar/>
       {/* <Products/> */}
-      <Routes>
-        <Route path='/' element={<Products></Products>}></Route>
-        <Route path='/cart' element={<Cart></Cart>}></Route>
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
+      <Header/>
+      <div className="container">
+        <Balance/>
+        <IncomeExpenses/>
+        <TransactionList/>
+        <AddTransaction/>
+      </div>
+      </GlobalProvider>
+    
   );
 }
 
