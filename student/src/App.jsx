@@ -18,7 +18,7 @@ function App() {
       {/* <Markdown/> */}
       {/* <Products/> */}
       <Header/>
-      <div className="container">
+      <div>
         <Balance/>
         <IncomeExpenses/>
         <TransactionList/>
