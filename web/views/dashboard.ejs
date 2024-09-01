@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      
+
+      <div class="px-4 py-5 my-5 text-center">
+       
+        <div>
+          <% if (image) { %>
+            <img
+          class="d-block mx-auto m-4 rounded-circle object-fit-cover border shadow"
+          id="d-image"
+          src="data:image/jpeg;base64,<%= image %>"
+          alt="profileImage"
+          height="100"
+          width="100"
+        />
+          <% } else { %>
+            <p>No Image Available</p>
+          <% } %>
+         
+        </div>
+        
+        <h1 class="display-5 fw-bold text-body-emphasis">Welcome</h1>
+        <h1 class="display-5 fw-bold text-body-emphasis">
+          <%= fname %> <%= lname %>
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Quickly design bootstrap code particularly used for web development. and web design
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a
+              class="btn btn-warning btn-lg px-4 gap-3"
+              href="/imgupdate"
+              role="button"
+              >update profile picture</a
+            >
+            <a class="btn btn-light btn-lg" href="/logout" role="button"
+              >Log Out</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

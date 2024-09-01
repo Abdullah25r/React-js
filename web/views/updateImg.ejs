@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid mx-auto m-5 w-25">
+        <div class="card">
+          <h2 class="card-header p-2 text-center fw-bold">Upload an Image</h2>
+          <div class="card-body text-center pt-5">
+            <img
+              src=""
+              class="d-block mb-5 h-25 w-25 mx-auto"
+              id="profile-img"
+              alt=""
+            />
+
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+              <input
+                type="file"
+                id="file"
+                class="d-none"
+                name="profileImage"
+                accept="image/*"
+                required
+              />
+              <label
+                for="file"
+                id="img-label"
+                role="button"
+                class="dashed-border"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center h-100"
+                >
+                  <svg
+                    width="80"
+                    height="80"
+                    viewBox="0 0 56 56"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="_leyI1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.784 2.06l26.05 3.66a6 6 0 015.106 6.776L50.28 38.53a6 6 0 01-6.777 5.107l-1.509-.212V22.021a8 8 0 00-8-8h-18.95l.963-6.855a6 6 0 016.777-5.107zm-9.76 11.96l1.002-7.132A8 8 0 0123.062.08l26.05 3.66a8 8 0 016.809 9.035l-3.66 26.035a8 8 0 01-9.037 6.809l-1.23-.173V48a8 8 0 01-8 8H8a8 8 0 01-8-8V22.02a8 8 0 018-8h5.024zm7.373 12.994a.4.4 0 00-.4.4v6.597h-6.599a.4.4 0 00-.4.4v1.2c0 .22.18.4.4.4h6.6v6.595c0 .221.178.4.4.4h1.2a.4.4 0 00.4-.4v-6.595h6.598a.4.4 0 00.4-.4v-1.2a.4.4 0 00-.4-.4h-6.599v-6.597a.4.4 0 00-.4-.4h-1.2zM8 16.021h25.994a6 6 0 016 6V48a6 6 0 01-6 6H8a6 6 0 01-6-6V22.02a6 6 0 016-6z"
+                      fill="#3C3C3C"
+                    ></path>
+                  </svg>
+                </div>
+              </label>
+
+              <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                <button class="btn btn-primary" type="submit">upload</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
